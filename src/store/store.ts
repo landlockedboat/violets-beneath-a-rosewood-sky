@@ -1,10 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from './counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import counterReducer from "../slices/counterSlice";
+import gameTextReducer from "../slices/gameTextSlice";
 
 // Create the Redux store
 const store = configureStore({
   reducer: {
     counter: counterReducer, // Add the counter reducer to the store
+    gameText: gameTextReducer,
   },
 });
 
