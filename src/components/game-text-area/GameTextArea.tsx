@@ -17,7 +17,7 @@ export const GameTextArea = () => {
   return (
     <div style={{ overflow: "scroll" }}>
       {gameText.map((text) => (
-        <div key={text.time}>{text.value}</div>
+        <div key={text.id}>{text.value}</div>
       ))}
       <div ref={messagesEndRef} />
     </div>
